@@ -173,7 +173,7 @@ const Home = props => {
           ListFooterComponent={renderFooter}
           refreshControl={
             <RefreshControl
-              refreshing={!showSearch && refreshing}
+              refreshing={refreshing}
               onRefresh={onRefresh}
               colors={['green']}
               enabled={!showSearch}
