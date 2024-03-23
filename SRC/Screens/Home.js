@@ -148,7 +148,7 @@ const Home = props => {
             _onChangeText={text => _filterData(text)}
             placeholder="Search..."
             placeholderTextColor={'#fff'}
-            autoFocus={false}
+            autoFocus={true}
             showClearBUtton={true}
             _onClickClearButton={() => {
               setShowSearch(false);
@@ -176,6 +176,7 @@ const Home = props => {
               refreshing={!showSearch && refreshing}
               onRefresh={onRefresh}
               colors={['green']}
+              enabled={!showSearch}
             />
           }
           ListEmptyComponent={ListEmptyComponent}
